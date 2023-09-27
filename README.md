@@ -26,4 +26,5 @@ Otherwise, for every 5 km/s above the speed limit (70), it give the driver one d
 This program's major task is to calculate an individual’s Net Salary by getting the inputs of basic salary and benefits.
 It Calculates the payee (i.e. Tax), NHIF Deductions, NSSF Deductions, gross salary, and net salary. 
 whre:  
-      Net Salary = basicSalary + benefits -(NHIF+NSSF+PAYEE)
+      Net Salary = basicSalary + benefits -(PAYEE+NHIF+NSSF)
+      // The first deduction is the Payee, NHIF and NSSF deductions are combined in the expression by multiplying it by two since the rates are equal. 

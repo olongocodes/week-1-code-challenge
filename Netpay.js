@@ -4,7 +4,7 @@ function payee(grossSalary,benefits ) {
       
     
       if (grossSalary >= 0 && grossSalary <= 24000){
-        netIncome = grossSalary + benefits - (150+((grossSalary*0.1)*2))
+        netIncome = grossSalary + benefits - (150+((grossSalary*0.1)*2))  // The first deduction is the Payee, NHIF and NSSF deductions are combined in the expression by multiplying it by two since the rates are equal.
         
       }
       else if (grossSalary >= 24001 && grossSalary <= 32333){
@@ -26,4 +26,5 @@ function payee(grossSalary,benefits ) {
       console.log(netIncome)
     }
     
-    payee(30000, 10000) 
+    payee(30000, 10000)   // example calling the function using the user inputs of the gross salary and benefits.
+    
